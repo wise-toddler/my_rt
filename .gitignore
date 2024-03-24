@@ -1,7 +1,5 @@
 servor/node_modules
 servor/package-lock.json
-servor/package.json
 
 client/node_modules
 client/package-lock.json
-client/package.json
