@@ -4,35 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
     <title>Mediasoup Video App</title>
 </head>
 
 <body>
-    <div class="min-w-full min-h-full">
-        <div class="flex justify-center min-w-full bg-black h-16 text-white items-center mb-10">Mediasoup sample</div>
-        <div class="flex flex-wrap -mx-1 overflow-hidden">
-            <div class="my-1 mx-1 w-full overflow-hidden sm:my-px sm:px-px md:my-px md;px-px">
-                <video class="w-full" id="localVideo" controls autoplay playsinline></video>
-                <div class="flex">
-                    <div class="flex flex-col mx-2">
-                        <button disabled id="btn_webcam" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start Webcam</button>
-                        <span id="webcam_status"></span>
-                    </div>
-                    <div class="flex flex-col mx-2">
-                        <button id="btn_screen" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start Screen</button>
-                        <span id="screen_status"></span>
-                    </div>
-                    <div class="flex flex-col mx-2">
-                        <button id="btn_subscribe" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Subscribe</button>
-                        <span id="subscribe_status"></span> 
-                    </div>
-                </div>
-            </div>
-            <div class="my-1 mx-1 w-full overflow-hidden sm:my-px sm:px-px md:my-px md;px-px">
-                <video class="w-full" id="remoteVideo" controls autoplay playsinline></video>
-        </div>
+    <h1>Mediasoup sample</h1>
+    <div>
+        <video id="localVideo" controls autoplay playsinline></video>
+        <button disabled id="btn_webcam">Camera publish</button>
+        <span id="webcam_status"></span>
+        <button id="btn_screen">Desktop publish</button>
+        <span id="screen_status"></span>
+        <button id="btn_subscribe">Subscribe</button>
+        <span id="subscribe_status"></span>
     </div>
+    <div>
+        <video id="remoteVideo" controls autoplay playsinline></video>
+    </div>
+    <!-- <script src="main.js"></script> -->
 
 </body>
 

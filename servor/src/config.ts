@@ -45,7 +45,8 @@ export const config = {
                     announcedIp: '127.0.0.1', // public ip
                 }
             ] as TransportListenInfo[],
-
+            maxIncomingBitrate: 1500000,
+            initialAvailableOutgoingBitrate: 1000000
         }
     }     
 } as const;
